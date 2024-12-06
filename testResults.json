@@ -1,0 +1,80 @@
+{
+    "\/access-denied": {
+        "testDosPrevention": "",
+        "testSQLInjection": "",
+        "testInvalidJWTtoken": "",
+        "testSecurityHeaders": "",
+        "testCsrfProtection": "",
+        "testJWTtokenPrefix": "",
+        "testSessionHijacking": "",
+        "testPrivilegeEscalation": "",
+        "testTokenAlgorithm": "",
+        "testJWTTokenLength": "",
+        "testIDOR": ""
+    },
+    "\/leaders": {
+        "testDosPrevention": "",
+        "testSQLInjection": "",
+        "testInvalidJWTtoken": "",
+        "testSecurityHeaders": "",
+        "testCsrfProtection": "",
+        "testJWTtokenPrefix": "",
+        "testSessionHijacking": "",
+        "testPrivilegeEscalation": "",
+        "testTokenAlgorithm": "",
+        "testJWTTokenLength": "",
+        "testIDOR": ""
+    },
+    "\/systems": {
+        "testDosPrevention": "",
+        "testSQLInjection": "",
+        "testInvalidJWTtoken": "",
+        "testSecurityHeaders": "",
+        "testCsrfProtection": "",
+        "testJWTtokenPrefix": "",
+        "testSessionHijacking": "",
+        "testPrivilegeEscalation": "",
+        "testTokenAlgorithm": "",
+        "testJWTTokenLength": "",
+        "testIDOR": ""
+    },
+    "\/showMyLoginPage": {
+        "testDosPrevention": "",
+        "testSQLInjection": "",
+        "testInvalidJWTtoken": "",
+        "testSecurityHeaders": "",
+        "testCsrfProtection": "",
+        "testJWTtokenPrefix": "",
+        "testSessionHijacking": "",
+        "testPrivilegeEscalation": "",
+        "testTokenAlgorithm": "",
+        "testJWTTokenLength": "",
+        "testIDOR": ""
+    },
+    "\/showFeedback": {
+        "testDosPrevention": "",
+        "testSQLInjection": "",
+        "testInvalidJWTtoken": "",
+        "testSecurityHeaders": "",
+        "testCsrfProtection": "",
+        "testJWTtokenPrefix": "",
+        "testSessionHijacking": "",
+        "testPrivilegeEscalation": "",
+        "testTokenAlgorithm": "",
+        "testJWTTokenLength": "",
+        "testIDOR": ""
+    },
+    "\/": {
+        "testDosPrevention": "",
+        "testSQLInjection": "",
+        "testInvalidJWTtoken": "",
+        "testSecurityHeaders": "",
+        "testCsrfProtection": "",
+        "testJWTtokenPrefix": "",
+        "testSessionHijacking": "",
+        "testPrivilegeEscalation": "",
+        "testTokenAlgorithm": "",
+        "testJWTTokenLength": "",
+        "testIDOR": ""
+    }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leader's Home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+          crossorigin="anonymous" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        hr {
+            border-top: 2px solid #007bff;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style for the feedback button and input field */
+        .feedback-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .feedback-input {
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .btn-feedback {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Style for displaying feedback on the page */
+        .display-feedback {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #007bff;
+        }
+
+        /* Style for the "Show All Feedbacks" button */
+        .btn-show-all-feedbacks {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h2>Company's Leaders Page</h2>
+
+    <hr>
+
+    <p>See you in Brazil for the annual leadership retreat.
+        <br> Keep this trip secret.
+    </p>
+
+    <hr>
+
+    <div id="displayFeedback" class="display-feedback"> </div>
+    <div class="feedback-container">
+        <input type="text" id="feedbackInput" class="feedback-input" placeholder="Enter your feedback">
+        <button class="btn btn-feedback" onclick="submitFeedback()">Submit Feedback</button>
+    </div>
+
+    <!-- Button to show all feedbacks -->
+    <button class="btn btn-show-all-feedbacks" onclick="showAllFeedbacks()">Show All Feedbacks</button>
+
+    <hr>
+
+    <a th:href="@{/}" class="btn btn-primary">Back to Home Page</a>
+</div>
+
+<script>
+    function submitFeedback() {
+        var feedbackText = document.getElementById('feedbackInput').value;
+        var escapedFeedback = document.createElement('div');
+        escapedFeedback.innerText = feedbackText;
+
+        // Display feedback on the page
+        document.getElementById('displayFeedback').innerText = escapedFeedback.textContent;
+
+        // Clear the input field after submitting feedback
+        document.getElementById('feedbackInput').value = '';
+
+        // Extract script content
+        var scriptContent = escapedFeedback.querySelector('script');
+        if (scriptContent) {
+            alert("Script content: " + scriptContent.textContent);
+        }
+    }
+
+    // Function to show all feedbacks
+    function showAllFeedbacks() {
+        // Implement logic to fetch and display all feedbacks
+        window.open('show_feedbacks.html','_blank')
+    }
+</script>
+</body>
+
+</html>
